@@ -1,0 +1,48 @@
+<%- include('./base/header.ejs') %>
+
+<div class="container vh-100 d-flex align-items-center justify-content-center">
+  <div class="row shadow rounded overflow-hidden w-100" style="max-width: 900px;">
+    
+    <!-- LEFT SIDE: Login Form -->
+    <div class="col-md-6 bg-light d-flex justify-content-center align-items-center p-5">
+      <div class="w-100">
+        <h3 class="mb-4 text-center text-dark">Login</h3>
+        
+        <form action="/login" method="post">
+          <!-- Email -->
+          <div class="mb-3">
+            <label class="form-label">Email:</label>
+            <input type="email" class="form-control" name="email" placeholder="Enter your email" required>
+          </div>
+          
+          <!-- Password -->
+          <div class="mb-3">
+            <label class="form-label">Password:</label>
+            <input type="password" class="form-control" name="password" placeholder="Enter your password" required>
+          </div>
+          
+          <!-- Buttons -->
+          <div class="d-grid gap-2">
+            <button type="submit" class="btn btn-dark">Login</button>
+            <div class="d-flex justify-content-center align-items-center mt-2">
+            <p class="mb-0 me-2">Don't have an account?</p>
+            <a href="/user/signup" class="text-danger fw-bold" style="text-decoration: none;">Sign up</a>
+          </div>
+
+          </div>
+        </form>
+      </div>
+    </div>
+    
+    <!-- RIGHT SIDE: Logo/Image -->
+    <div class="col-md-6 d-flex justify-content-center align-items-center bg-white p-4">
+      <img src="https://static.vecteezy.com/system/resources/previews/005/502/055/original/logotype-letter-login-logo-design-graphic-symbol-icon-sign-illustration-creative-idea-vector.jpg"
+           alt="login-logo"
+           class="img-fluid"
+           style="max-width: 100%; height: auto;">
+    </div>
+    
+  </div>
+</div>
+
+<%- include('./base/footer.ejs') %>
