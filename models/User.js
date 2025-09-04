@@ -7,7 +7,7 @@ const userSchema = new Schema({
         lastName : {type : String },
         email : {type  : String},
         password : {type : String, required : true},
-        userType : {type : String, default : 'student'},
+        userType : {type : String, default : 'Admin'},
         createdAt : Date,
         updatedAt : Date
 });
