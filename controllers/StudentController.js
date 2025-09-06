@@ -82,7 +82,9 @@ async function editStudent(req,res){
         // console.log(req.body,"req.body");
         student.rollNo =req.body.rollNo;
         student.name = req.body.name;
+        student.emailId = req.body.emailId;
         student.fatherName= req.body.fatherName;
+        student.motherName= req.body.motherName;
         student.course=req.body.course;
         student.branch=req.body.branch;
         student.yearOfAdmission=req.body.yearOfAdmission;
